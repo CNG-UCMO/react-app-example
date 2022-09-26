@@ -11,14 +11,18 @@ export function AntdExample() {
           console.log(e.target.value)
           setInputValue(e.target.value)
         }}
+        style={{width: 150}}
       />
       <Select
+        defaultValue="value1"
         options={[
-          {label: "option 1", value: "value1"}
+          {label: "option 1", value: "value1"},
+          {label: "option 2", value: "value2"}
         ]}
         onChange={(value) => {
           console.log(value)
         }}
+        style={{width: 150}}
       />
     </div>
   )
